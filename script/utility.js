@@ -26,6 +26,27 @@ function setBackgroundById(elementId){
     element.classList.add('bg-orange-500')
 }
 
+function getTextValueElementById(elementId){
+    const element = document.getElementById(elementId)
+    const elementValueText = element.innerText
+    const value = parseInt(elementValueText)
+    return value;
+}
+function setTextValueElementById(elementId ,value){
+    const element = document.getElementById(elementId)
+    element.innerText = value;
+}
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId)
+    const text = element.innerText;
+    return text;
+}
+
+
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId)
+    element.classList.remove('bg-orange-500')
+}
 
 // function getARandomAlphabet() {
 //     // get or create an alphabet array
